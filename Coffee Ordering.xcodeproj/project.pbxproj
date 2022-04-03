@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		8469C75D27E0F9E4009D06D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469C75C27E0F9E4009D06D1 /* AppDelegate.swift */; };
 		8469C75F27E0F9E4009D06D1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469C75E27E0F9E4009D06D1 /* SceneDelegate.swift */; };
-		8469C76127E0F9E4009D06D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8469C76027E0F9E4009D06D1 /* ViewController.swift */; };
 		8469C76427E0F9E4009D06D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8469C76227E0F9E4009D06D1 /* Main.storyboard */; };
 		8469C76627E0F9E5009D06D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8469C76527E0F9E5009D06D1 /* Assets.xcassets */; };
 		8469C76927E0F9E5009D06D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8469C76727E0F9E5009D06D1 /* LaunchScreen.storyboard */; };
+		84A2D21727E2DCA7001022C6 /* AddOderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D21627E2DCA7001022C6 /* AddOderViewController.swift */; };
+		84A2D21B27E2DD4C001022C6 /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A2D21A27E2DD4C001022C6 /* OrdersTableViewController.swift */; };
+		DC2F4C9E27F9BD0C004BFEF9 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F4C9D27F9BD0C004BFEF9 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8469C75927E0F9E4009D06D1 /* Coffee Ordering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Coffee Ordering.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8469C75C27E0F9E4009D06D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8469C75E27E0F9E4009D06D1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8469C76027E0F9E4009D06D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8469C76327E0F9E4009D06D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8469C76527E0F9E5009D06D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8469C76827E0F9E5009D06D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8469C76A27E0F9E5009D06D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A2D21627E2DCA7001022C6 /* AddOderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOderViewController.swift; sourceTree = "<group>"; };
+		84A2D21A27E2DD4C001022C6 /* OrdersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		DC2F4C9D27F9BD0C004BFEF9 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,33 @@
 		8469C75B27E0F9E4009D06D1 /* Coffee Ordering */ = {
 			isa = PBXGroup;
 			children = (
+				84A2D21C27E2DD75001022C6 /* Services */,
+				84A2D21527E2DC94001022C6 /* Controller */,
 				8469C75C27E0F9E4009D06D1 /* AppDelegate.swift */,
 				8469C75E27E0F9E4009D06D1 /* SceneDelegate.swift */,
-				8469C76027E0F9E4009D06D1 /* ViewController.swift */,
 				8469C76227E0F9E4009D06D1 /* Main.storyboard */,
 				8469C76527E0F9E5009D06D1 /* Assets.xcassets */,
 				8469C76727E0F9E5009D06D1 /* LaunchScreen.storyboard */,
 				8469C76A27E0F9E5009D06D1 /* Info.plist */,
 			);
 			path = "Coffee Ordering";
+			sourceTree = "<group>";
+		};
+		84A2D21527E2DC94001022C6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84A2D21627E2DCA7001022C6 /* AddOderViewController.swift */,
+				84A2D21A27E2DD4C001022C6 /* OrdersTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84A2D21C27E2DD75001022C6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F4C9D27F9BD0C004BFEF9 /* Webservice.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8469C76127E0F9E4009D06D1 /* ViewController.swift in Sources */,
+				84A2D21B27E2DD4C001022C6 /* OrdersTableViewController.swift in Sources */,
+				84A2D21727E2DCA7001022C6 /* AddOderViewController.swift in Sources */,
 				8469C75D27E0F9E4009D06D1 /* AppDelegate.swift in Sources */,
+				DC2F4C9E27F9BD0C004BFEF9 /* Webservice.swift in Sources */,
 				8469C75F27E0F9E4009D06D1 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
