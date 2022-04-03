@@ -27,7 +27,7 @@ class Webservice {
             
             let result = try? JSONDecoder().decode(T.self, from: data)
             if let result = result {
-                DispatchQueue.main.sync {
+                DispatchQueue.main.async {
                     completion(.success(result))
                 }
             }else {

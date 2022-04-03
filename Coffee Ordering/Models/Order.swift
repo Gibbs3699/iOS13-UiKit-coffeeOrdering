@@ -10,6 +10,7 @@ import Foundation
 enum CoffeeType: String, Codable {
     case cappuccino
     case latte
+    case lattee
     case espressino
     case cortado
     
@@ -24,6 +25,6 @@ enum CoffeeSize: String, Codable {
 struct Order: Codable {
     let name: String
     let email: String
-    let type: CoffeeSize
-    let size: CoffeeType
+    let type: CoffeeType
+    let size: CoffeeSize
 }
