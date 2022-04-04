@@ -17,7 +17,7 @@ class OrderListViewModel {
 }
 
 extension OrderListViewModel {
-    func orderViewModel(dd index: Int) -> OrderViewModel {
+    func orderViewModel(at index: Int) -> OrderViewModel {
         return self.ordersViewModel[index]
     }
 }
