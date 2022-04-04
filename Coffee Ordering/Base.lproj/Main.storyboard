@@ -83,7 +83,7 @@
                                 </prototypes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LEK-FS-x9I">
-                                <rect key="frame" x="107" y="621" width="200" height="34"/>
+                                <rect key="frame" x="107" y="655" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="FOz-I6-HEh"/>
                                 </constraints>
@@ -91,34 +91,24 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="144-g7-pfA">
-                                <rect key="frame" x="107" y="671" width="200" height="34"/>
+                                <rect key="frame" x="107" y="705" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="zAx-YP-Qat"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MTM-WY-mvJ">
-                                <rect key="frame" x="104" y="548" width="206" height="32"/>
-                                <segments>
-                                    <segment title="Small"/>
-                                    <segment title="Medium"/>
-                                    <segment title="Large"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3Zi-pP-jsr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="LEK-FS-x9I" firstAttribute="top" secondItem="MTM-WY-mvJ" secondAttribute="bottom" constant="42" id="10I-Fu-jDx"/>
                             <constraint firstItem="LEK-FS-x9I" firstAttribute="centerX" secondItem="Fvz-9L-n5d" secondAttribute="centerX" id="20Q-52-2Vr"/>
                             <constraint firstItem="3Zi-pP-jsr" firstAttribute="bottom" secondItem="TmF-ws-MUm" secondAttribute="bottom" constant="326" id="76r-wg-S4o"/>
                             <constraint firstItem="144-g7-pfA" firstAttribute="top" secondItem="LEK-FS-x9I" secondAttribute="bottom" constant="16" id="A2C-xf-y4v"/>
                             <constraint firstItem="TmF-ws-MUm" firstAttribute="top" secondItem="3Zi-pP-jsr" secondAttribute="top" id="DtM-KC-dLn"/>
                             <constraint firstItem="TmF-ws-MUm" firstAttribute="trailing" secondItem="3Zi-pP-jsr" secondAttribute="trailing" id="NO5-3Q-kIJ"/>
                             <constraint firstItem="144-g7-pfA" firstAttribute="centerX" secondItem="Fvz-9L-n5d" secondAttribute="centerX" id="Sjj-hT-1EK"/>
-                            <constraint firstItem="MTM-WY-mvJ" firstAttribute="top" secondItem="TmF-ws-MUm" secondAttribute="bottom" constant="32" id="iOc-mE-rez"/>
-                            <constraint firstItem="MTM-WY-mvJ" firstAttribute="centerX" secondItem="Fvz-9L-n5d" secondAttribute="centerX" id="s9O-Nv-90C"/>
+                            <constraint firstItem="3Zi-pP-jsr" firstAttribute="bottom" secondItem="144-g7-pfA" secondAttribute="bottom" constant="103" id="kRU-AN-c5s"/>
                             <constraint firstItem="TmF-ws-MUm" firstAttribute="leading" secondItem="3Zi-pP-jsr" secondAttribute="leading" id="z09-M8-vFq"/>
                         </constraints>
                     </view>
