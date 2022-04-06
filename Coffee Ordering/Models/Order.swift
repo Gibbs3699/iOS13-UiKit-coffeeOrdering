@@ -60,8 +60,6 @@ extension Order {
 }
 
 
-
-
 extension Order {
     
     init?(_ vm: AddCoffeeOrderViewModel) {

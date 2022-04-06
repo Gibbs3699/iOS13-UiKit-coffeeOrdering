@@ -8,7 +8,14 @@
 import Foundation
 import UIKit
 
+protocol AddCoffeeOrderDelegate {
+    func addCoffeeOrderViewControllerDidSave(order: Order, controller: UIViewController)
+    func addCoffeeOrderViewControllerDidClose(controller: UIViewController)
+}
+
 class AddOderViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    var delegate: AddCoffeeOrderDelegate?
     
     private var vm = AddCoffeeOrderViewModel()
     private var coffeeSizesSegmentedControl: UISegmentedControl!
@@ -74,6 +81,28 @@ class AddOderViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         self.vm.selectedSize = selectedSize
         self.vm.selectedType = self.vm.type[indexPath.row]
+        
+        Webservice().load(resource: Order.create(vm: self.vm)) { result in
+            switch result {
+            case .success(let order):
+                if let order = order, let delegate = self.delegate {
+                    DispatchQueue.main.async {
+                        delegate.addCoffeeOrderViewControllerDidSave(order: order, controller: self)
+                    }
+                }
+                print(order)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
     
+    @IBAction func close() {
+        if let delegate = self.delegate {
+            DispatchQueue.main.async {
+                delegate.addCoffeeOrderViewControllerDidClose(controller: self)
+            }
+        }
+        
+    }
 }
